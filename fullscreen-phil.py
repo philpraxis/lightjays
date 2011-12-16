@@ -45,8 +45,8 @@ if __name__ == '__main__':
         screen = pygame.display.get_surface()
         import random
         rr = random.randrange
-        screen.fill((rr(0,256),rr(0,256),rr(0,256)),(rr(0,SW),rr(0,SH),32,32))
+        screen.fill((rr(0,256),rr(0,256),rr(0,256)),(rr(0,SW),rr(0,SH),64,64))
         pygame.display.flip()
-        time.sleep(0.05 + random.randint(0,100) / 100.0)
+        time.sleep(0.02 + random.randint(0,10) / 1000.0)
         pygame.draw.rect(screen, (0, 0, 0), (0, 0, 1000, 1000))
         
